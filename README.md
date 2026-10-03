@@ -25,3 +25,6 @@ It's really simple to launch. Run launch.py in the downloaded folder.
 
 ## How do I download it?
 Clone it and unzip it.
+
+## May I help?
+Of course you can. All suggestions/contributions are welcomed.
