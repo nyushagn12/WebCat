@@ -1,0 +1,10 @@
+quickjs-ng 0.17.0.1 official PyPI wheel hashes
+
+Linux x86_64 / CPython 3.10+ abi3
+sha256 a1f7352b7e508346c8254f5ae790799898ebd1b2df2538bf9b7070a757faf903
+
+Windows AMD64 / CPython 3.10+ abi3
+sha256 355511615baa17bc98092680f068e3536ea1ee5a650b16f59bf6871f497f3780
+
+macOS arm64 / CPython 3.10+ abi3
+sha256 330f6bdb61ebf8102d650af799dd093924f34cc8be449fed97102147e133f685
