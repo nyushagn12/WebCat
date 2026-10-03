@@ -1,0 +1,8 @@
+:root { font-family: sans-serif; color-scheme: light; }
+body { margin: 0; background: #eef2ff; color: #172554; }
+.wrap { width: 82%; max-width: 760px; margin: 36px auto; padding: 28px; background: white; border: 1px solid #c7d2fe; border-radius: 18px; }
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+button { padding: 9px 14px; border: 0; border-radius: 9px; background: #312e81; color: white; }
+#result { margin-top: 18px; padding: 14px; background: #eef2ff; border-radius: 10px; white-space: pre-wrap; }
+.small { color: #64748b; font-size: 14px; }
+code { font-family: monospace; }

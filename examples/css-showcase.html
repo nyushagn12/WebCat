@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Webcat</title>
+  <style>
+    :root {
+      --ink: #102033;
+      --muted: #607089;
+      --panel: #ffffff;
+      --page: #eaf0f7;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+    }
+    html, body { margin: 0; padding: 0; background-color: var(--page); color: var(--ink); }
+    body { font-family: TkDefaultFont, sans-serif; }
+    .page { max-width: 920px; margin: 28px auto; padding: 0 22px 40px; }
+    .hero { background: #102a56; color: white; padding: 28px 30px; border: 1px solid #27406b; border-radius: 18px; }
+    .hero h1 { margin: 0 0 8px; font-size: 34px; }
+    .hero p { margin: 0; color: #dbeafe; line-height: 1.5; }
+    .grid { display: flex; flex-wrap: nowrap; gap: 14px; margin-top: 18px; }
+    .card { background: var(--panel); border: 1px solid #cbd5e1; border-radius: 14px; padding: 18px; flex: 1; }
+    .card h2 { margin-top: 0; color: #0f172a; }
+    .pill { display: inline-block; background: var(--accent-soft); color: #1d4ed8; padding: 5px 9px; margin-right: 5px; border-radius: 999px; }
+    .accent { color: var(--accent); font-weight: 700; }
+    .notice { margin-top: 18px; padding: 14px; background: #f8fafc; border-left: 5px solid var(--accent); }
+    code { background: #eef2ff; padding: 2px 5px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 7px; }
+    .controls { display: flex; gap: 10px; align-items: center; margin-top: 16px; }
+    button { background: var(--accent); color: white; padding: 10px 14px; border: 0; border-radius: 9px; }
+    input { width: 260px; padding: 8px; border: 1px solid #94a3b8; border-radius: 7px; }
+    @media screen { .ignored { color: red; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>css</h1>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Layout</h2>
+        <p class="accent">test</p>
+        <ul>
+          <li><span class="pill">flex</span><span class="pill">gap</span></li>
+          <li><span class="pill">margin</span><span class="pill">padding</span></li>
+          <li><span class="pill">width</span><span class="pill">min/max</span></li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Selectors</h2>
+        <p>try</p>
+        <p data-kind="feature">try</p>
+      </article>
+      <article class="card">
+        <h2>Theme variables</h2>
+        <p>Try.</p>
+        <div class="notice">CSS that wont work isn't rendered</div>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <h2>Native controls with CSS</h2>
+      <p>Try.</p>
+      <div class="controls">
+        <input id="name" placeholder="Type here">
+        <button id="hello">try</button>
+      </div>
+      <p id="output">Hmmmm...</p>
+    </section>
+  </main>
+  <script>
+    const input = document.getElementById('name');
+    const output = document.getElementById('output');
+    input.addEventListener('input', () => output.textContent = 'u typed ' + input.value);
+    document.getElementById('hello').addEventListener('click', () => output.textContent = 'you tried');
+  </script>
+</body>
+</html>
